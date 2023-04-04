@@ -448,7 +448,7 @@ main .col2 .project:nth-child(1) {
   background: var(--primary);
 }
 main .col2 .project:nth-child(2) {
-  background: var(--secondary);
+  background: var(--teritary3);
 }
 
 footer {
