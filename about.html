@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="about.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="spread">
+        <div class="logo">
+          <a href="/index.html"><h1 class="title">Yasin</h1></a>
+          <h1 class="period">.</h1>
+        </div>
+      </div>
+      <div class="spread">
+        <a href="/about.html"><h5>About</h5></a>
+        <a href="/projects.html"><h5>Portfolio</h5></a>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="menu.svg" id="menu" />
+      </a>
+    </nav>
+
+    <div id="myLinks">
+      <a href="/about.html"><h5>About</h5></a>
+      <a href="/projects.html"><h5>Portfolio</h5></a>
+    </div>
+    <!-- Section #1 -->
+
+    <section>
+      <div class="one">
+        <h5>As a dedicated software engineer,</h5>
+        <p>
+          I thrive on the challenge of tackling modern problems with innovative
+          software solutions.
+        </p>
+      </div>
+      <div class="two">
+        <img src="profpic.svg" style="height: 250px; width: 250px" />
+      </div>
+    </section>
+    <!-- Section #2 -->
+    <section>
+      <div class="one">
+        <h5>
+          With a solid foundation in computer science and a strong command of
+          technical skills,
+        </h5>
+        <p>
+          I am constantly seeking new opportunities to push the boundaries of
+          what's possible.
+        </p>
+      </div>
+      <div class="two">
+        <img src="computer.svg" style="height: 250px; width: 250px" />
+      </div>
+    </section>
+    <!-- Section #3 -->
+    <section>
+      <div class="one">
+        <h5>My true passion</h5>
+        <p>
+          lies in utilizing my expertise in various programming languages to
+          craft impactful software solutions that directly benefit end-users. I
+          firmly believe in the power of technology to transform lives, and I am
+          committed to delivering reliable, user-centric solutions that make a
+          tangible difference.
+        </p>
+      </div>
+      <div class="two">
+        <img src="proud.svg" style="height: 250px; width: 250px" />
+      </div>
+    </section>
+    <!--Call to Action-->
+    <h1 class="action">Proud To Bring Digital Ideas To Life!</h1>
+  </body>
+  <script>
+    function myFunction() {
+      let x = document.getElementById("myLinks");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+  </script>
+</html>
