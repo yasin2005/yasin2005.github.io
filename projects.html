@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content=" I create user-centrist, gratifying, and human experiences on the internet."
+    />
+    <meta name="keywords" content="UI/UX, Web/App Development, JavaScript" />
+    <meta name="author" content="Yasin Ibrahim" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="project.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="spread">
+        <div class="logo">
+          <a href="/"><h1 class="title">Yasin</h1></a>
+          <h1 class="period">.</h1>
+        </div>
+      </div>
+      <div class="spread">
+        <a href="/about.html"><h5>About</h5></a>
+        <a href="/projects.html"><h5>Portfolio</h5></a>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="menu.svg" id="menu" />
+      </a>
+    </nav>
+
+    <div id="myLinks">
+      <a href="/about.html"><h5>About</h5></a>
+      <a href="/projects.html"><h5>Portfolio</h5></a>
+    </div>
+    <!--Title-->
+    <h1 class="action">Projects</h1>
+
+    <!--Main-->
+    <main>
+      <!--One-->
+      <section>
+        <div class="rel">
+          <img
+            class="one"
+            src="youthactivismporject.png"
+            data-modal-target="#modal"
+          />
+
+          <div class="num1">
+            <h3>01</h3>
+          </div>
+        </div>
+        <a href="https://www.youthactivismproject.org/" target="_blank"
+          ><h4>Youth Activism Project</h4></a
+        >
+      </section>
+      <!--Two-->
+      <section>
+        <div class="rel">
+          <img class="two" src="mdtutorials.png" />
+
+          <div class="num2">
+            <h3>02</h3>
+          </div>
+        </div>
+        <a href="https://mdtutorials.org/" target="_blank"
+          ><h4>MD Tutorials</h4></a
+        >
+      </section>
+      <!--Three-->
+      <section>
+        <div class="rel">
+          <img class="two" src="twcoders.png" />
+
+          <div class="num2">
+            <h3>03</h3>
+          </div>
+        </div>
+        <a href="http://twcoders.com/" target="_blank"><h4>TWCODERS</h4></a>
+        <p>In Progress</p>
+      </section>
+      <!--Three-->
+      <section>
+        <div class="rel">
+          <img class="three" src="mynextprayer.png" />
+
+          <div class="num2">
+            <h3>04</h3>
+          </div>
+        </div>
+        <a href="https://mynextprayer.com/" target="_blank"
+          ><h4>MyNextPrayer</h4></a
+        >
+        <p>In Progress</p>
+      </section>
+
+      <!--
+        <section class="port col">
+          <div class="project">
+            <div class="text">
+              <h2>Youth Activism Project</h2>
+              <h5>Non-Profit Activism Group</h5>
+              <p>
+                Bright and easy-going layout, leading children to a brigther and
+                more active future
+              </p>
+            </div>
+            <div class="img-contain">
+            
+              <img src="YAP_Logo.png" class="display1" id="one"/>
+              <img src="youthactivismporject.png" class="display" id="onne" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="text">
+              <h2>MyNextPrayer</h2>
+              <h5>Muslim App</h5>
+              <p>
+                Simple to use, many utilities needed for the daily to-go Muslim
+              </p>
+            </div>
+            <div class="img-contain">
+              <img src="arrow-up-right.svg" class="arrow" />
+              <img src="logo3.png" class="display1" id="two"/>
+              <img src="mynextprayer.png" class="display" id="twwo" />
+            </div>
+          </div>
+        </section>
+        <section class="port col2">
+          <div class="project">
+            <div class="text">
+              <h2>MD Tutorials</h2>
+              <h5>Tutoring Resources</h5>
+              <p>Simple to use, basic design for children and parents alike</p>
+            </div>
+            <div class="img-contain">
+             <a href="https://mdtutorials.org/"><img src="arrow-up-right.svg" class="arrow" /></a> 
+              <img src="mdtutorialslogo.png" class="display1" id="three" />
+              <img src="mdtutorials.png" class="display" id="thhree"/>
+            </div>
+          </div>
+          <div class="project">
+              <div class="text">
+              <h2>TWCODERS</h2>
+              <h5>Programming Org</h5>
+              <p>Nice and simple layout for programmer group</p>
+            </div>
+            <div class="img-contain">
+              <a href="http://twcoders.com/"><img src="arrow-up-right.svg" class="arrow" /></a>
+              <img src="twcoderslogo.png" class="display1" id="four" />
+              <img src="twcoders.png" class="display" id="foour"/>
+            </div>
+          </div>
+          </div>
+        </section>
+        -->
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title"></div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <section class="sec">
+          <div class="title">Youth Activism Project</div>
+          <p>Non-Profit Activism Group</p>
+          <img class="mock" src="yapMockup.png" />
+        </section>
+        <section class="sect">
+          <div class="title">About The Project</div>
+
+          <p>Challenge:</p>
+          <br />
+          <p>
+            The initial version of the website exhibited significant usability
+            issues and lacked a smooth user experience. The interface felt
+            clunky and cumbersome, hampering visitors' ability to navigate
+            seamlessly through its pages. Moreover, the font selection and
+            overall page layout failed to establish a cohesive visual identity,
+            resulting in a disjointed and inconsistent appearance.
+          </p>
+        </section>
+        <section class="sect">
+          <div class="title">Solution</div>
+          <p>
+            - Carefully selecting fonts that harmonize with the website's theme
+            and purpose. By establishing a consistent and visually appealing
+            typographic hierarchy, I could create a cohesive visual language
+            that guided users through the pages effortlessly
+          </p>
+          <br />
+          <p>
+            - A comprehensive redesign of the page layout, ensuring a harmonious
+            arrangement of elements that enhanced both aesthetic appeal and
+            usability
+          </p>
+          <br />
+          <p>
+            - Employ advanced optimization techniques such as minimizng code,
+            removing bugs, etc.
+          </p>
+          <br />
+          <br />
+          <br />
+          <h4>Understanding The User</h4>
+          <p>
+            When designing for a target audience of young kids who aspire to
+            make a positive impact in the world, it's crucial to consider their
+            unique preferences and cognitive development. One effective strategy
+            is to utilize bright and vibrant colors, as they tend to attract and
+            engage children's attention. Moreover, these lively colors can also
+            appeal to older individuals, such as parents or educators, who may
+            be involved in guiding and supporting the young kids. Incorporating
+            scrollable stories can be an excellent way to enhance user
+            experience and foster interaction with the content. Scrollable
+            stories allow for a dynamic and immersive narrative experience,
+            enabling young users to explore and discover the message at their
+            own pace
+          </p>
+          <br />
+          <p>
+            Studies have shown that bright colors, such as vibrant blues,
+            yellows, and reds, can stimulate children's visual perception and
+            promote a sense of excitement and curiosity. Additionally, research
+            indicates that using contrasting colors can aid in information
+            retention and comprehension, making it easier for young kids to
+            grasp and remember key concepts
+          </p>
+          <br />
+          <p>
+            When it comes to scrollable stories, research has demonstrated that
+            interactive storytelling can enhance cognitive skills, creativity,
+            and critical thinking in children. Scrollable stories can also
+            significantly increase user engagement metrics, such as session
+            duration and interaction rates
+          </p>
+          <br />
+          <br />
+          <br />
+          <h3>Sketchs</h3>
+          <p>
+            The initial phase of my design process involved creating a series of
+            foundational sketches that laid the groundwork for a visually
+            compelling and informative user interface. These sketches featured
+            card to help present information in a clear and concise manner,
+            while employing a storytelling format.
+          </p>
+        </section>
+        <br />
+        <br />
+        <img class="sketch" src="YAPSketch.png" />
+        <section class="sect">
+          <h3>Wireframes</h3>
+          <p>
+            The front page of a website serves as a digital storefront, the
+            initial point of contact between the user and the content. To
+            establish trust, it is imperative to present key information in a
+            concise and visually engaging manner. This can be accomplished by
+            employing well-designed cards that highlight essential elements,
+            such as mission statements, values, and notable achievements. These
+            cards, adorned with attractive imagery and succinct yet impactful
+            descriptions, serve as virtual stepping stones, guiding the user
+            deeper into the website. Once trust is established on the front
+            page, the subsequent pages can adopt a more immersive and
+            storytelling approach. In the storytelling format, each page can
+            represent a chapter in the overarching narrative, unveiling
+            different aspects of the cause or theme.
+          </p>
+        </section>
+        <br />
+        <br />
+        <br />
+        <img class="wire" src="YAPWireframe.png" />
+        <section class="sect">
+          <h3>User Testing</h3>
+          <h5>Some Changes:</h5>
+          <p>- Lack of content creates a lot of negative space</p>
+          <p>- Making button functions more clear</p>
+          <br />
+          <br />
+          <br />
+          <h3>Final Design</h3>
+          <p>
+            The purpose of the website was to assist young people in engaging in
+            activism and bringing about change in their communities. With this
+            goal in mind, a minimal and informative website would greatly
+            benefit children. To view the final result, you can click on the
+            text "Youth Activism Project" on the card.
+          </p>
+          <br />
+          <img class="mocks" src="YAPMockup2.png" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3>Takeways & Next Steps</h3>
+          <p>
+            With this project, I learned how children react to websites and how
+            to create an amazing reading experience for users. Since the website
+            was launched, it has received numerous expressions of gratitude for
+            being such a valuable resource.
+          </p>
+          <br />
+          <br />
+          <h6>
+            “Words can't tell how much references and inspiration I got from
+            this terrific resource page on your website. Without a doubt, those
+            links helped responsible youth to raise awareness of social
+            injustices and improve their lives through acts of activism."
+          </h6>
+          <br />
+          <br />
+          <p>
+            When it comes to improving the experince, there could be more work
+            on:
+          </p>
+
+          <p>- Dynamic animations to make the website more interactive</p>
+
+          <p>
+            - Create a flow for students to use the resources present on the
+            website
+          </p>
+
+          <p>
+            - Make a section where like-minded kids and organizations can
+            connect
+          </p>
+        </section>
+        <section class="flex">
+          <img src="yapMockup.png" />
+          <img src="YAPMockup2.png" />
+          <img src="YAPMockup3.png" />
+          <img src="YAPMockup4.png" />
+        </section>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+  <script>
+    function myFunction() {
+      let x = document.getElementById("myLinks");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+
+    const openModalButtons = document.querySelectorAll("[data-modal-target]");
+    const closeModalButtons = document.querySelectorAll("[data-close-button]");
+    const overlay = document.getElementById("overlay");
+
+    openModalButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const modal = document.querySelector(button.dataset.modalTarget);
+        openModal(modal);
+      });
+    });
+
+    overlay.addEventListener("click", () => {
+      const modals = document.querySelectorAll(".modal.active");
+      modals.forEach((modal) => {
+        closeModal(modal);
+      });
+    });
+
+    closeModalButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const modal = button.closest(".modal");
+        closeModal(modal);
+      });
+    });
+
+    function openModal(modal) {
+      if (modal == null) return;
+      modal.classList.add("active");
+      overlay.classList.add("active");
+    }
+
+    function closeModal(modal) {
+      if (modal == null) return;
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+  </script>
+</html>

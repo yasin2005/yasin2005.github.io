@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content=" I create user-centrist, gratifying, and human experiences on the internet."
+    />
+    <meta name="keywords" content="UI/UX, Web/App Development, JavaScript" />
+    <meta name="author" content="Yasin Ibrahim" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yasin Ibrahim</title>
+  </head>
+  <body>
+    <nav>
+      <div class="spread">
+        <div class="logo">
+          <a href="/"><h1 class="title">Yasin</h1></a>
+          <h1 class="period">.</h1>
+        </div>
+      </div>
+      <div class="spread">
+        <a href="/about.html"><h5>About</h5></a>
+        <a href="/projects.html"><h5>Portfolio</h5></a>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="menu.svg" id="menu" />
+      </a>
+    </nav>
+    <div id="myLinks">
+      <a href="/about.html"><h5>About</h5></a>
+      <a href="/projects.html"><h5>Portfolio</h5></a>
+    </div>
+    <section class="gap">
+      <section>
+        <div class="cloumn">
+          <div class="intro">
+            <div class="intro1">
+              <h1>Yasin Ibrahim</h1>
+              <p>
+                I create user-centrist, gratifying, and human experiences on the
+                internet, that bring digital ideas to life
+              </p>
+            </div>
+            <div class="intro2">
+              <div class="items" data-modal-target="#modal"><h3>UI/UX</h3></div>
+              <div class="items" data-modal-target="#modal1">
+                <h3>Web/App Development</h3>
+              </div>
+              <div class="items" data-modal-target="#modal2">
+                <h3>Javascript</h3>
+              </div>
+            </div>
+          </div>
+          <div class="under">
+            <div class="one">
+              <h2>2+</h2>
+              <p>Years Experince</p>
+            </div>
+            <div class="two">
+              <h2>5+</h2>
+              <p>Projects Handeled</p>
+            </div>
+            <div class="three">
+              <h2>3</h2>
+              <p>Clients</p>
+            </div>
+          </div>
+        </div>
+        <img src="photo.jpg" class="photo" />
+      </section>
+      <main>
+        <h3>Companies That Trust Me</h3>
+        <div class="review">
+          <img class="one" src="twcoderslogo.png" />
+          <img class="reviewStars" src="fiveStars.png" />
+        </div>
+
+        <div class="review">
+          <img class="two" src="mdtutorialslogo.png" />
+          <img class="reviewStars" src="fiveStars.png" />
+        </div>
+        <div class="review">
+          <img class="three" src="YAP_Logo.png" />
+          <img class="reviewStars" src="fiveStars.png" />
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <h2>Want to work together?</h2>
+      <p>Feel free to reach out to help out on a project.</p>
+      <p>Email: yasin.ibrahim2005@gmail.com</p>
+      <a href="mailto:yasin.ibrahim2005@gmail.com"
+        ><button>Contact Me</button></a
+      >
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/yasin-ibrahim-12531122a/"
+          target="_blank"
+          ><img src="linkedin.svg"
+        /></a>
+        <a href="https://twitter.com/SilverSolider05" target="_blank">
+          <img src="twitter.svg"
+        /></a>
+        <a href="https://github.com/yasin2005" target="_blank">
+          <img src="github.svg"
+        /></a>
+      </div>
+    </footer>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">UI & UX Design</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        UX design refers to the term “user experience design”, while UI stands
+        for “user interface design”. Both elements are crucial to a product and
+        work closely together.
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal1">
+      <div class="modal-header">
+        <div class="title">Website & Application Development</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Web application development is the creation of application programs that
+        reside on remote servers and are delivered to the user's device over the
+        Internet.
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-header">
+        <div class="title">JavaScript</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        JavaScript is a scripting or programming language that allows you to
+        implement complex features on web pages. Every time a web page does more
+        than just sit there and display static information for you to look at
+        such as displaying timely content updates, interactive maps, animated
+        2D/3D graphics, scrolling video jukeboxes, you can bet that JavaScript
+        is probably involved.
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+  <script>
+    function myFunction() {
+      let x = document.getElementById("myLinks");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+    const openModalButtons = document.querySelectorAll("[data-modal-target]");
+    const closeModalButtons = document.querySelectorAll("[data-close-button]");
+    const overlay = document.getElementById("overlay");
+
+    openModalButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const modal = document.querySelector(button.dataset.modalTarget);
+        openModal(modal);
+      });
+    });
+
+    overlay.addEventListener("click", () => {
+      const modals = document.querySelectorAll(".modal.active");
+      modals.forEach((modal) => {
+        closeModal(modal);
+      });
+    });
+
+    closeModalButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const modal = button.closest(".modal");
+        closeModal(modal);
+      });
+    });
+
+    function openModal(modal) {
+      if (modal == null) return;
+      modal.classList.add("active");
+      overlay.classList.add("active");
+    }
+
+    function closeModal(modal) {
+      if (modal == null) return;
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+  </script>
+</html>
