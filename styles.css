@@ -20,9 +20,7 @@
     100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-* {
-  overflow-x: none;
-}
+
 
 *::-webkit-scrollbar {
   width: 16px;
@@ -38,7 +36,11 @@
   border: 2px solid var(--black);
 }
 
-
+.mc-modal-bg {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
 
 body {
   display: flex;
