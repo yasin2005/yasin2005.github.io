@@ -20,8 +20,9 @@
     100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-* {
-border:1px solid red !important;
+.mc-modal-bg {
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
 *::-webkit-scrollbar {
@@ -47,6 +48,7 @@ body {
   align-items: center;
   padding: 15px;
   background: var(--black);
+  margin:0px;
 }
 
 a {
