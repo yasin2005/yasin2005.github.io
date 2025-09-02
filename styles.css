@@ -20,7 +20,6 @@
     100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-
 *::-webkit-scrollbar {
   width: 16px;
 }
@@ -35,8 +34,6 @@
   border: 2px solid var(--black);
 }
 
-
-
 body {
   display: flex;
   flex-direction: column;
@@ -44,7 +41,7 @@ body {
   align-items: center;
   padding: 15px;
   background: var(--black);
-  margin:0px;
+  margin: 0px;
 }
 
 a {
@@ -190,14 +187,6 @@ section .intro {
   padding: 25px;
   display: flex;
   gap: 40px;
-  align-self: start;
-}
-
-section .photo {
-  height: 600px;
-  border-radius: 25px;
-  box-shadow: var(--shadow);
-  width: 30%;
   align-self: start;
 }
 
@@ -519,12 +508,6 @@ footer .social img:active {
 }
 
 @media screen and (max-width: 1300px) {
-  section .photo {
-    height: 475px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 30%;
-  }
   section .intro1 h1 {
     font-size: 39.06px;
   }
@@ -534,12 +517,6 @@ footer .social img:active {
 }
 
 @media screen and (max-width: 1175px) {
-  section .photo {
-    height: 430px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 30%;
-  }
   section .items h3 {
     font-size: 16px;
   }
@@ -552,25 +529,13 @@ footer .social img:active {
   section .intro1 h1 {
     font-size: 31.25px;
   }
-  section .photo {
-    height: 400px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 30%;
-  }
+
   #menu {
     display: none;
   }
 }
 
 @media screen and (max-width: 950px) {
-  section .photo {
-    height: 350px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 30%;
-    align-self: center;
-  }
   main {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -633,25 +598,11 @@ footer .social img:active {
   }
 }
 @media screen and (max-width: 820px) {
-  section .photo {
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 30%;
-    align-self: center;
-  }
   #menu {
     display: none;
   }
 }
 @media screen and (max-width: 700px) {
-  section .photo {
-    height: 250px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 30%;
-    align-self: center;
-  }
   section .items {
     box-shadow: var(--shadow);
     padding: 0px 32px;
@@ -722,13 +673,6 @@ footer .social img:active {
   }
 }
 @media screen and (max-width: 610px) {
-  section .photo {
-    height: 225px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 30%;
-    align-self: center;
-  }
   section .items {
     box-shadow: var(--shadow);
     padding: 0px 24px;
@@ -797,15 +741,6 @@ footer .social img:active {
     height: 125px;
     transition: 0.5s ease;
   }
-  section .photo {
-    width: 150px;
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 45%;
-    align-self: center;
-    display: none;
-  }
 
   section .intro {
     background: var(--gradient);
@@ -836,14 +771,6 @@ footer .social img:active {
   }
 }
 @media screen and (max-width: 500px) {
-  section .photo {
-    width: 150px;
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 50%;
-    align-self: center;
-  }
   footer {
     background: var(--gradient);
     height: fit-content;
@@ -860,14 +787,6 @@ footer .social img:active {
 }
 
 @media screen and (max-width: 450px) {
-  section .photo {
-    width: 150px;
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 60%;
-    align-self: center;
-  }
   nav {
     gap: 10px;
   }
@@ -885,14 +804,6 @@ footer .social img:active {
     gap: 40px;
     flex-direction: column;
     text-align: center;
-  }
-  section .photo {
-    width: 150px;
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
-    width: 65%;
-    align-self: center;
   }
   main .reviewStars {
     height: 19.7596796px;
