@@ -338,18 +338,43 @@ main {
   position: absolute;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   body {
     flex-direction: column;
   }
 
   aside {
     width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   main {
     width: 100%;
     height: auto;
     overflow-y: hidden;
+  }
+
+  p, .item-description, .resume, .nav-description {
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  .item-title {
+    font-size: 2.25rem;
+  }
+
+  .cursor {
+    font-size: 3.5rem;
+  }
+
+  .item-time {
+    font-size: 1.5rem;
+  }
+  
+  .tag {
+    padding: 2.5rem;
+    font-size: 2rem;
   }
 }
