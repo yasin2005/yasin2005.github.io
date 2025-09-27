@@ -1,203 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content=" I create user-centrist, gratifying, and human experiences on the internet."
-    />
-    <meta name="keywords" content="UI/UX, Web/App Development, JavaScript" />
-    <meta name="author" content="Yasin Ibrahim" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
     <link rel="stylesheet" href="styles.css" />
     <title>Yasin Ibrahim</title>
   </head>
   <body>
-    <nav>
-      <div class="spread">
-        <div class="logo">
-          <a href="/"><h1 class="title">Yasin</h1></a>
-          <h1 class="period">.</h1>
-        </div>
-      </div>
-      <div class="spread">
-        <a href="/about.html"><h5>About</h5></a>
-        <a href="/projects.html"><h5>Portfolio</h5></a>
-        <a href="/blog.html"><h5>Blog</h5></a>
-      </div>
+    <aside>
+      <h1>Yasin Ibrahim</h1>
+      <h4>Software Engineer</h4>
+      <p class="intro">
+        I am a developer that creates user-centrist experiences on the internet, 
+        that bring digital ideas to life
+      </p>
 
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <img src="menu.svg" id="menu" />
-      </a>
-    </nav>
-    <div id="myLinks">
-      <a href="/about.html"><h5>About</h5></a>
-      <a href="/projects.html"><h5>Portfolio</h5></a>
-      <a href="/blog.html"><h5>Blog</h5></a>
-    </div>
-    <section class="gap">
-      <section>
-        <div class="cloumn">
-          <div class="intro">
-            <div class="intro1">
-              <h1>Yasin Ibrahim</h1>
-              <p>
-                I create user-centrist, gratifying, and human experiences on the
-                internet, that bring digital ideas to life
+      <section id="nav">
+        <a href="#about" class="nav-description">About</a>
+        <a href="#experience" class="nav-description">Experience</a>
+        <a href="#projects" class="nav-description">Projects</a>
+      </section>
+
+      <section class="social">
+        <a href="mailto:yasin.ibrahim2005@gmail.com">
+          <img src="mail.svg">
+        </a>
+
+        <a href="https://www.linkedin.com/in/yasin-ibrahim-12531122a" target="_blank">
+          <img src="linkedin.svg">
+        </a>
+
+        <a href="https://www.github.com/yasin2005" target="_blank">
+          <img src="github.svg">
+        </a>
+      </section>
+    </aside>
+    <main>
+      <section id="about">
+        <p class="cursor typewriter-animation">
+          Hello! I am <strong>Yasin.</strong>
+        </p>
+
+        <p>
+          I am a software engineer who enjoys solving 
+          modern problems with software solutions. My passion lies 
+          in applying my knowledge of programming languages to build 
+          software solutions for end-users.
+        </p>
+      </section>
+      <section id="experience">
+        <div class="timeline-container item">
+          <div class="timeline-item">
+            <div class="timeline">
+              <p class="item-time">May 2025 - Aug 2025</p>
+            </div>
+
+            <div class="item-content">
+              <h3 class="item-title">Amazon</h3>
+              <p class="item-meta">Software Engineer Intern</p>
+              <p class="item-description">
+                Built tools on a cross-platform debugging framework with 
+                live server-to-tool connections, enabling developers to monitor 
+                and test the Kindle application across devices for layout rendering, 
+                user interactions, analytics, and overall application behavior.
               </p>
             </div>
-            <div class="intro2">
-              <div class="items" data-modal-target="#modal"><h3>UI/UX</h3></div>
-              <div class="items" data-modal-target="#modal1">
-                <h3>Web/App Development</h3>
-              </div>
-              <div class="items" data-modal-target="#modal2">
-                <h3>Javascript</h3>
-              </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline">
+              <p class="item-time">May 2024 - Aug 2024</p>
+            </div>
+
+            <div class="item-content">
+              <p class="item-meta">Software Engineer Intern</p>
+              <p class="item-description">
+                Work on a cross-platform rendering system to display Kindle 
+                books within a in house C++ GUI framework, encompassing layout, 
+                drawing, and event handling
+              </p>
             </div>
           </div>
-          <!--Put under the experince or maybe change into the projects-->
-          <div class="under">
-            <div class="one">
-              <h2>2+</h2>
-              <p>Years Experince</p>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">C++</span>
+            <span class="tag">Objective C</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="timeline-container item">
+          <div class="timeline-item">
+            <div class="timeline">
+              <p class="item-time">Aug 2023 - Aug 2023</p>
             </div>
-            <div class="two">
-              <h2>5+</h2>
-              <p>Projects Handeled</p>
-            </div>
-            <div class="three">
-              <h2>3</h2>
-              <p>Clients</p>
+
+            <div class="item-content">
+              <h3 class="item-title">Youth Activism Project</h3>
+              <p class="item-meta">Contractor</p>
+              <p class="item-description">
+                Work on data management, assisting in running programs, website management, and more
+              </p>
             </div>
           </div>
+
+          <div class="timeline-item">
+            <div class="timeline">
+              <p class="item-time">Nov 2022 - Aug 2023</p>
+            </div>
+
+            <div class="item-content">
+              <p class="item-meta">Intern</p>
+              <p class="item-description">
+                Work with the Operational and Programming Team on different 
+                projects such as data management, public relations, website management, 
+                and more
+              </p>
+            </div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Wordpress</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div>
+            <p class="item-time">Feb 2022 - Sep 2022</p>
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">NAF</h3>
+            <p class="item-meta">Student Advisor</p>
+            <p class="item-description">
+              Provided feedback and brainstormed ideas for the initial UI/UX of 
+              of the application with senior engineers
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div>
+            <p class="item-time">Feb 2022 - Jun 2023</p>
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Comet</h3>
+            <p class="item-meta">Intern</p>
+            <p class="item-description">
+              Collaborated with engineers to analyze and improve the UI/UX of the application
+            </p>
+
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Wordpress</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="resume" href="resume.pdf" target="_blank">See the Resume</a>
         </div>
       </section>
-      <main>
-        <!--Change into experince timeline-->
-        <h3>Companies That Trust Me</h3>
-        <div class="review">
-          <img class="one" src="twcoderslogo.png" />
-          <img class="reviewStars" src="fiveStars.png" />
-        </div>
 
-        <div class="review">
-          <img class="two" src="mdtutorialslogo.png" />
-          <img class="reviewStars" src="fiveStars.png" />
-        </div>
-        <div class="review">
-          <img class="three" src="YAP_Logo.png" />
-          <img class="reviewStars" src="fiveStars.png" />
-        </div>
-      </main>
-    </section>
+      <section id="projects">
+        <a href="https://read.amazon.com/" target="_blank" class="item project">
+          <div>
+            <img src="kindle.png" class="itemimage" />
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Kindle</h3>
+            <p class="item-description">
+              A digital reading platform bulit by Amazon for purchasing and accessing 
+              ebooks across all your devices
+            </p>
+          </div>
+        </a>
 
-    <footer>
-      <h2>Want to work together?</h2>
-      <p>Feel free to reach out to help out on a project.</p>
-      <p>Email: yasin.ibrahim2005@gmail.com</p>
-      <a href="mailto:yasin.ibrahim2005@gmail.com"
-        ><button>Contact Me</button></a
-      >
-      <div class="social">
-        <a
-          href="https://www.linkedin.com/in/yasin-ibrahim-12531122a/"
-          target="_blank"
-          ><img src="linkedin.svg"
-        /></a>
-        <a href="https://github.com/yasin2005" target="_blank">
-          <img src="github.svg"
-        /></a>
-      </div>
-    </footer>
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="title">UI & UX Design</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        UX design refers to the term “user experience design”, while UI stands
-        for “user interface design”. Both elements are crucial to a product and
-        work closely together.
-      </div>
-    </div>
-    <div id="overlay"></div>
+        <a href="http://youthactivismproject.org/" target="_blank" class="item project">
+          <div>
+            <img src="youthactivismporject.png" class="itemimage" />
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Youth Activism Project</h3>
+            <p class="item-description">
+              A nonprofit organization dedicated to empowering young 
+              people to become advocates for social change
+            </p>
+          </div>
+        </a>
 
-    <div class="modal" id="modal1">
-      <div class="modal-header">
-        <div class="title">Website & Application Development</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        Web application development is the creation of application programs that
-        reside on remote servers and are delivered to the user's device over the
-        Internet.
-      </div>
-    </div>
-    <div id="overlay"></div>
+        <a href="https://www.knopro.org/" target="_blank" class="item project">
+          <div>
+            <img src="knopro.png" class="itemimage" />
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Kno Pro</h3>
+            <p class="item-description">
+              A platform for high school students who want to develop 
+              in-demand skills by completing real-world projects
+            </p>
+          </div>
+        </a>
 
-    <div class="modal" id="modal2">
-      <div class="modal-header">
-        <div class="title">JavaScript</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        JavaScript is a scripting or programming language that allows you to
-        implement complex features on web pages. Every time a web page does more
-        than just sit there and display static information for you to look at
-        such as displaying timely content updates, interactive maps, animated
-        2D/3D graphics, scrolling video jukeboxes, you can bet that JavaScript
-        is probably involved.
-      </div>
-    </div>
-    <div id="overlay"></div>
+        <a href="https://applywithcomet.com/" target="_blank" class="item project">
+          <div>
+            <img src="comet.png" class="itemimage" />
+          </div>
+          <div class="item-content">
+            <h3 class="item-title">Comet</h3>
+            <p class="item-description">
+              A comprehensive college application assistant platform 
+              that guides students through college admissions
+            </p>
+          </div>
+        </a>
+      </section>
+    </main>
   </body>
-  <script>
-    function myFunction() {
-      let x = document.getElementById("myLinks");
-      if (x.style.display === "flex") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "flex";
-      }
-    }
-    const openModalButtons = document.querySelectorAll("[data-modal-target]");
-    const closeModalButtons = document.querySelectorAll("[data-close-button]");
-    const overlay = document.getElementById("overlay");
-
-    openModalButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const modal = document.querySelector(button.dataset.modalTarget);
-        openModal(modal);
-      });
-    });
-
-    overlay.addEventListener("click", () => {
-      const modals = document.querySelectorAll(".modal.active");
-      modals.forEach((modal) => {
-        closeModal(modal);
-      });
-    });
-
-    closeModalButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const modal = button.closest(".modal");
-        closeModal(modal);
-      });
-    });
-
-    function openModal(modal) {
-      if (modal == null) return;
-      modal.classList.add("active");
-      overlay.classList.add("active");
-    }
-
-    function closeModal(modal) {
-      if (modal == null) return;
-      modal.classList.remove("active");
-      overlay.classList.remove("active");
-    }
-  </script>
 </html>
